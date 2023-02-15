@@ -5,7 +5,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.saama.base.AutomationWrapper;
-
+/**
+ * 
+ * @author Balaji Dinakaran
+ *
+ */
 public class LoginTest extends AutomationWrapper {
 	
 	@Test
