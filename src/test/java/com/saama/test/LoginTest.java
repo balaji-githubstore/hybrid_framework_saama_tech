@@ -11,7 +11,6 @@ import com.saama.base.AutomationWrapper;
  *
  */
 public class LoginTest extends AutomationWrapper {
-	
 	@Test
 	public void validLoginTest()
 	{
