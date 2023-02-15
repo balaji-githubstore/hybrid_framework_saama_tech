@@ -5,7 +5,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.saama.base.AutomationWrapper;
-
+/**
+ * 
+ * @author Balaji Dinakaran
+ *
+ * Description - This class contains methods for validating UI components
+ */
 public class LoginUITest extends AutomationWrapper {
 	
 	@Test
