@@ -13,13 +13,13 @@ import com.saama.base.AutomationWrapper;
  */
 public class LoginUITest extends AutomationWrapper {
 	
-	@Test
+	@Test(priority = 1)
 	public void validateTitleTest() {
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, "OrangeHRM");
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void validateHeaderTest() {
 		String actualHeader = driver.findElement(By.xpath("//h5")).getText();
 		Assert.assertEquals(actualHeader, "Login");
