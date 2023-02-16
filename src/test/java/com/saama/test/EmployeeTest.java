@@ -5,7 +5,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.saama.base.AutomationWrapper;
-
+/*
+ * Add Employee Test
+ */
 public class EmployeeTest extends AutomationWrapper {
 
 	@Test
