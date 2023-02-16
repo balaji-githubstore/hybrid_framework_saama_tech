@@ -5,17 +5,18 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.saama.base.AutomationWrapper;
+import com.saama.utilities.DataUtils;
 /*
  * Add Employee Test
  */
 public class EmployeeTest extends AutomationWrapper {
 
 	
-	@Test
-	public void addEmployeeTest()
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "addEmployeeData")
+	public void addEmployeeTest(String username,String password,String firstName,String middleName,String lastName,String expectedName)
 	{
-		driver.findElement(By.name("username")).sendKeys("Admin");
-		driver.findElement(By.cssSelector("input[name='password']")).sendKeys("admin123");
+		driver.findElement(By.name("username")).sendKeys(username);
+		driver.findElement(By.cssSelector("input[name='password']")).sendKeys(password);
 		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
 		
 		//Click On PIM Menu
@@ -25,20 +26,20 @@ public class EmployeeTest extends AutomationWrapper {
 		driver.findElement(By.linkText("Add Employee")).click();
 		
 		//Enter FirstName
-		driver.findElement(By.name("firstName")).sendKeys("John");
+		driver.findElement(By.name("firstName")).sendKeys(firstName);
 	
 		//Enter middle name 
-		driver.findElement(By.name("middleName")).sendKeys("J");
+		driver.findElement(By.name("middleName")).sendKeys(middleName);
 		
 		//Enter Lastname
-		driver.findElement(By.name("lastName")).sendKeys("Wick");
+		driver.findElement(By.name("lastName")).sendKeys(lastName);
 		
 		//Click on save 
 		driver.findElement(By.xpath("//button[normalize-space()='Save']")).click();
 		
 		//Assert the added employee name
-		String actualAddedName= driver.findElement(By.xpath("//h6[normalize-space()='John Wick']")).getText();
-		Assert.assertEquals(actualAddedName, "John Wick");
+		String actualAddedName= driver.findElement(By.xpath("//h6[normalize-space()='"+expectedName+"']")).getText();
+		Assert.assertEquals(actualAddedName, expectedName);
 		
 	}
 }

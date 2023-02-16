@@ -19,5 +19,27 @@ public class DataUtils {
 		
 		return data;
 	}
+	
+	@DataProvider
+	public Object[][] addEmployeeData()
+	{
+		Object[][] data=new Object[2][6];
+		
+		data[0][0]="Admin";
+		data[0][1]="admin123";
+		data[0][2]="Saul";
+		data[0][3]="K";
+		data[0][4]="Goodman";
+		data[0][5]="Saul Goodman";
+		
+		data[1][0]="Admin";
+		data[1][1]="admin123";
+		data[1][2]="Peter";
+		data[1][3]="ken";
+		data[1][4]="Henry";
+		data[1][5]="Peter Henry";
+		
+		return data;
+	}
 
 }
