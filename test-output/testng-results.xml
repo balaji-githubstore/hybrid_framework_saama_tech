@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-15T16:54:09 IST" name="Default suite" finished-at="2023-02-15T16:54:43 IST" duration-ms="34253">
+  <suite started-at="2023-02-16T14:49:19 IST" name="Default suite" finished-at="2023-02-16T14:49:35 IST" duration-ms="15462">
     <groups>
     </groups>
-    <test started-at="2023-02-15T16:54:09 IST" name="Default test" finished-at="2023-02-15T16:54:43 IST" duration-ms="34253">
+    <test started-at="2023-02-16T14:49:19 IST" name="Default test" finished-at="2023-02-16T14:49:35 IST" duration-ms="15462">
       <class name="com.saama.test.EmployeeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.saama.test.EmployeeTest@67f639d3]" started-at="2023-02-15T16:54:09 IST" name="setup" finished-at="2023-02-15T16:54:30 IST" duration-ms="20956" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saama.test.EmployeeTest@290222c1]" started-at="2023-02-16T14:49:19 IST" name="setup" finished-at="2023-02-16T14:49:25 IST" duration-ms="5501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addEmployeeTest()[pri:0, instance:com.saama.test.EmployeeTest@67f639d3]" started-at="2023-02-15T16:54:30 IST" name="addEmployeeTest" finished-at="2023-02-15T16:54:38 IST" duration-ms="8263" status="PASS">
+        <test-method signature="addEmployeeTest()[pri:0, instance:com.saama.test.EmployeeTest@290222c1]" started-at="2023-02-16T14:49:25 IST" name="addEmployeeTest" finished-at="2023-02-16T14:49:34 IST" duration-ms="9708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saama.test.EmployeeTest@67f639d3]" started-at="2023-02-15T16:54:38 IST" name="teardown" finished-at="2023-02-15T16:54:43 IST" duration-ms="4964" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saama.test.EmployeeTest@290222c1]" started-at="2023-02-16T14:49:34 IST" name="teardown" finished-at="2023-02-16T14:49:35 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
