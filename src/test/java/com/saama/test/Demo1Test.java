@@ -11,7 +11,7 @@ import com.saama.base.AutomationWrapper;
  *
  *	Will be deleted
  */
-public class Demo1Test{
+public class Demo1Test {
 	
 	@DataProvider
 	public String[][] validData()

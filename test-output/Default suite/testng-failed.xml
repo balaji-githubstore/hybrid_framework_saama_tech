@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.saama.test.LoginTest">
+      <class name="com.saama.test.Demo1Test">
         <methods>
-          <include name="setup"/>
-          <include name="validLoginTest"/>
-          <include name="teardown"/>
+          <include name="validTest"/>
         </methods>
-      </class> <!-- com.saama.test.LoginTest -->
+      </class> <!-- com.saama.test.Demo1Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
