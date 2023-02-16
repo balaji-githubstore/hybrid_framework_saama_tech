@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.saama.base.AutomationWrapper;
+import com.saama.utilities.DataUtils;
 
 /**
  * 
@@ -24,23 +25,8 @@ public class LoginTest extends AutomationWrapper {
 		Assert.assertEquals(actualHeader, "Dashboard");
 	}
 	
-	@DataProvider
-	public String[][] invalidLoginData()
-	{
-		String[][] data=new String[2][3]; 
-		
-		data[0][0]="john";
-		data[0][1]="john123";
-		data[0][2]="Invalid credentials";
-		
-		data[1][0]="peter";
-		data[1][1]="peter123";
-		data[1][2]="Invalid credentials";
-		
-		return data;
-	}
 
-	@Test(dataProvider = "invalidLoginData")
+	@Test(dataProvider = "invalidLoginData",dataProviderClass = DataUtils.class)
 	public void invalidLoginTest(String username, String password, String expectedError) 
 	{
 		driver.findElement(By.name("username")).sendKeys(username);
