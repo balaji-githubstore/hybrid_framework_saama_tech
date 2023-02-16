@@ -15,7 +15,7 @@ import com.saama.utilities.DataUtils;
  */
 public class LoginTest extends AutomationWrapper {
 
-	@Test
+	@Test(groups = {"smoke","login"})
 	public void validLoginTest() {
 		driver.findElement(By.name("username")).sendKeys("Admin");
 		driver.findElement(By.cssSelector("input[name='password']")).sendKeys("admin123");
@@ -26,7 +26,7 @@ public class LoginTest extends AutomationWrapper {
 	}
 	
 
-	@Test(dataProvider = "invalidLoginData",dataProviderClass = DataUtils.class)
+	@Test(dataProvider = "invalidLoginData",dataProviderClass = DataUtils.class,groups = {"login"})
 	public void invalidLoginTest(String username, String password, String expectedError) 
 	{
 		driver.findElement(By.name("username")).sendKeys(username);

@@ -12,7 +12,7 @@ import com.saama.utilities.DataUtils;
 public class EmployeeTest extends AutomationWrapper {
 
 	
-	@Test(dataProviderClass = DataUtils.class,dataProvider = "addEmployeeData")
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "addEmployeeData",groups = {"smoke"})
 	public void addEmployeeTest(String username,String password,String firstName,String middleName,String lastName,String expectedName)
 	{
 		driver.findElement(By.name("username")).sendKeys(username);
