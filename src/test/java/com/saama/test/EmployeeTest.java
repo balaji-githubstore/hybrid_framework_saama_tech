@@ -5,6 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.saama.base.AutomationWrapper;
+import com.saama.pages.LoginPage;
+import com.saama.pages.MainPage;
 import com.saama.utilities.DataUtils;
 /*
  * Add Employee Test
@@ -14,12 +16,14 @@ public class EmployeeTest extends AutomationWrapper {
 	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider",groups = {"smoke"})
 	public void addEmployeeTest(String username,String password,String firstName,String middleName,String lastName,String expectedName)
 	{
-		driver.findElement(By.name("username")).sendKeys(username);
-		driver.findElement(By.cssSelector("input[name='password']")).sendKeys(password);
-		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
+		LoginPage loginPage=new LoginPage(driver);
+		loginPage.enterUsername(username);
+		loginPage.enterPassword(password);
+		loginPage.clickOnLogin();
 		
 		//Click On PIM Menu
-		driver.findElement(By.xpath("//span[text()='PIM']")).click();
+		MainPage mainPage=new MainPage(driver);
+		mainPage.clickOnPIMMenu();
 		
 		//Click on Add Employee
 		driver.findElement(By.linkText("Add Employee")).click();
