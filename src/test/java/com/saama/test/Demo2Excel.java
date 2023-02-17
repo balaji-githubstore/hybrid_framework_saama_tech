@@ -20,17 +20,18 @@ public class Demo2Excel {
 		
 		XSSFSheet sheet= book.getSheet("invalidLoginTest");
 		
+		int rowCount=sheet.getPhysicalNumberOfRows();
+		int cellCount=sheet.getRow(0).getPhysicalNumberOfCells();
+		
 		DataFormatter format=new DataFormatter();
 		
-		Object[][] data=new Object[2][3];
+		Object[][] data=new Object[rowCount-1][cellCount];
 		
-		for(int r=1;r<3;r++)
+		for(int r=1;r<rowCount;r++)
 		{
-			for(int c=0;c<3;c++)
+			for(int c=0;c<cellCount;c++)
 			{
-				String cellValue=format.formatCellValue(sheet.getRow(r).getCell(c));
-				System.out.println(cellValue);
-				data[r-1][c]=cellValue;
+				data[r-1][c]=format.formatCellValue(sheet.getRow(r).getCell(c));
 			}
 		}
 		
