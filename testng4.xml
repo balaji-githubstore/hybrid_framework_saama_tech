@@ -5,7 +5,12 @@
 	<test thread-count="5" name="Test-ch">
 		<parameter name="browser" value="ch"></parameter>
 		<classes>
-			<class name="com.saama.test.LoginUITest" />
+			<class name="com.saama.test.LoginUITest">
+				<methods>
+					<include name="validateTitleTest"></include>
+				</methods>
+
+			</class>
 		</classes>
 	</test> <!-- Test -->
 
@@ -13,8 +18,8 @@
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="com.saama.test.LoginUITest" />
+			<class name="com.saama.test.LoginTest" />
 		</classes>
 	</test> <!-- Test -->
 
 </suite> <!-- Suite -->
-

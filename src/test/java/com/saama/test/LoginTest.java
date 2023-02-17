@@ -24,7 +24,6 @@ public class LoginTest extends AutomationWrapper {
 		String actualHeader = driver.findElement(By.xpath("//h6[normalize-space()='Dashboard']")).getText();
 		Assert.assertEquals(actualHeader, "Dashboard");
 	}
-	
 
 	@Test(dataProvider = "commonDataProvider",dataProviderClass = DataUtils.class,groups = {"login"})
 	public void invalidLoginTest(String username, String password, String expectedError) 
