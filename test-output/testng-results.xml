@@ -1,181 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-17T16:05:27 IST" name="Suite" finished-at="2023-02-17T16:06:13 IST" duration-ms="46181">
+  <suite started-at="2023-02-17T16:22:50 IST" name="Default suite" finished-at="2023-02-17T16:23:02 IST" duration-ms="12793">
     <groups>
       <group name="UI">
-        <method signature="LoginUITest.validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@7db12bb6]" name="validateTitleTest" class="com.saama.test.LoginUITest"/>
-        <method signature="LoginUITest.validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@6bbe85a8]" name="validateTitleTest" class="com.saama.test.LoginUITest"/>
-        <method signature="LoginUITest.validateHeaderTest()[pri:2, instance:com.saama.test.LoginUITest@6bbe85a8]" name="validateHeaderTest" class="com.saama.test.LoginUITest"/>
+        <method signature="LoginUITest.validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@d86a6f]" name="validateTitleTest" class="com.saama.test.LoginUITest"/>
       </group> <!-- UI -->
       <group name="smoke">
-        <method signature="LoginUITest.validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@7db12bb6]" name="validateTitleTest" class="com.saama.test.LoginUITest"/>
-        <method signature="LoginTest.validLoginTest()[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" name="validLoginTest" class="com.saama.test.LoginTest"/>
-        <method signature="LoginUITest.validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@6bbe85a8]" name="validateTitleTest" class="com.saama.test.LoginUITest"/>
+        <method signature="LoginUITest.validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@d86a6f]" name="validateTitleTest" class="com.saama.test.LoginUITest"/>
       </group> <!-- smoke -->
-      <group name="login">
-        <method signature="LoginTest.invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" name="invalidLoginTest" class="com.saama.test.LoginTest"/>
-        <method signature="LoginTest.validLoginTest()[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" name="validLoginTest" class="com.saama.test.LoginTest"/>
-      </group> <!-- login -->
     </groups>
-    <test started-at="2023-02-17T16:05:27 IST" name="Test-ch" finished-at="2023-02-17T16:05:35 IST" duration-ms="7882">
+    <test started-at="2023-02-17T16:22:50 IST" name="Default test" finished-at="2023-02-17T16:23:02 IST" duration-ms="12793">
       <class name="com.saama.test.LoginUITest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.saama.test.LoginUITest@7db12bb6]" started-at="2023-02-17T16:05:27 IST" name="setup" finished-at="2023-02-17T16:05:34 IST" duration-ms="7460" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ch]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="init()[pri:0, instance:com.saama.test.LoginUITest@d86a6f]" started-at="2023-02-17T16:22:49 IST" name="init" finished-at="2023-02-17T16:22:50 IST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@7db12bb6]" started-at="2023-02-17T16:05:34 IST" name="validateTitleTest" finished-at="2023-02-17T16:05:34 IST" duration-ms="24" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTitleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saama.test.LoginUITest@7db12bb6]" started-at="2023-02-17T16:05:34 IST" name="teardown" finished-at="2023-02-17T16:05:35 IST" duration-ms="340" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.saama.test.LoginUITest -->
-    </test> <!-- Test-ch -->
-    <test started-at="2023-02-17T16:05:27 IST" name="Test-edge" finished-at="2023-02-17T16:06:13 IST" duration-ms="46181">
-      <class name="com.saama.test.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:28 IST" name="setup" finished-at="2023-02-17T16:05:39 IST" duration-ms="11348" status="PASS">
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.saama.test.LoginUITest@d86a6f]" started-at="2023-02-17T16:22:50 IST" name="setup" finished-at="2023-02-17T16:23:02 IST" duration-ms="12536" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:39 IST" name="invalidLoginTest" data-provider="commonDataProvider" finished-at="2023-02-17T16:05:41 IST" duration-ms="2081" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bala]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[bala123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid credentials]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:41 IST" name="teardown" finished-at="2023-02-17T16:05:41 IST" duration-ms="156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:41 IST" name="setup" finished-at="2023-02-17T16:05:47 IST" duration-ms="5987" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
+                <![CDATA[public void com.saama.test.LoginUITest.validateTitleTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:47 IST" name="invalidLoginTest" data-provider="commonDataProvider" finished-at="2023-02-17T16:05:49 IST" duration-ms="1733" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ken]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ken13]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid credentials]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:49 IST" name="teardown" finished-at="2023-02-17T16:05:49 IST" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:49 IST" name="setup" finished-at="2023-02-17T16:05:57 IST" duration-ms="7794" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validLoginTest()[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:57 IST" name="validLoginTest" finished-at="2023-02-17T16:05:59 IST" duration-ms="2349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saama.test.LoginTest@3a7442c7]" started-at="2023-02-17T16:05:59 IST" name="teardown" finished-at="2023-02-17T16:06:00 IST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.saama.test.LoginTest -->
-      <class name="com.saama.test.LoginUITest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.saama.test.LoginUITest@6bbe85a8]" started-at="2023-02-17T16:06:00 IST" name="setup" finished-at="2023-02-17T16:06:06 IST" duration-ms="6271" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@6bbe85a8]" started-at="2023-02-17T16:06:06 IST" name="validateTitleTest" finished-at="2023-02-17T16:06:06 IST" duration-ms="8" status="PASS">
+        <test-method signature="validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@d86a6f]" started-at="2023-02-17T16:23:02 IST" name="validateTitleTest" finished-at="2023-02-17T16:23:02 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saama.test.LoginUITest@6bbe85a8]" started-at="2023-02-17T16:06:06 IST" name="teardown" finished-at="2023-02-17T16:06:06 IST" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.saama.test.LoginUITest@6bbe85a8]" started-at="2023-02-17T16:06:06 IST" name="setup" finished-at="2023-02-17T16:06:12 IST" duration-ms="6149" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.saama.test.LoginUITest@d86a6f]" started-at="2023-02-17T16:23:02 IST" name="teardown" finished-at="2023-02-17T16:23:02 IST" duration-ms="195" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[[TestResult name=validateTitleTest status=SUCCESS method=LoginUITest.validateTitleTest()[pri:1, instance:com.saama.test.LoginUITest@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateHeaderTest()[pri:2, instance:com.saama.test.LoginUITest@6bbe85a8]" started-at="2023-02-17T16:06:12 IST" name="validateHeaderTest" finished-at="2023-02-17T16:06:13 IST" duration-ms="405" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateHeaderTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saama.test.LoginUITest@6bbe85a8]" started-at="2023-02-17T16:06:13 IST" name="teardown" finished-at="2023-02-17T16:06:13 IST" duration-ms="181" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="end()[pri:0, instance:com.saama.test.LoginUITest@d86a6f]" started-at="2023-02-17T16:23:02 IST" name="end" finished-at="2023-02-17T16:23:03 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
       </class> <!-- com.saama.test.LoginUITest -->
-    </test> <!-- Test-edge -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
