@@ -26,7 +26,7 @@ public class LoginTest extends AutomationWrapper {
 	}
 	
 
-	@Test(dataProvider = "invalidLoginData",dataProviderClass = DataUtils.class,groups = {"login"})
+	@Test(dataProvider = "commonDataProvider",dataProviderClass = DataUtils.class,groups = {"login"})
 	public void invalidLoginTest(String username, String password, String expectedError) 
 	{
 		driver.findElement(By.name("username")).sendKeys(username);
