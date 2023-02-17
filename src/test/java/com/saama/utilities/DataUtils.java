@@ -8,6 +8,8 @@ public class DataUtils {
 	public Object[][] invalidLoginData()
 	{
 		Object[][] data=new Object[2][3]; 
+		//i->number of testcase
+		//j->number of parameters
 		
 		data[0][0]="john";
 		data[0][1]="john123";
