@@ -24,7 +24,6 @@ public class LoginTest extends AutomationWrapper {
 		loginPage.enterPassword("admin123");
 		loginPage.clickOnLogin();
 		
-
 		String actualHeader = driver.findElement(By.xpath("//h6[normalize-space()='Dashboard']")).getText();
 		Assert.assertEquals(actualHeader, "Dashboard");
 	}

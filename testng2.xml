@@ -3,7 +3,6 @@
 <suite name="Suite" parallel="classes">
 	<parameter name="browser" value="edge"></parameter>
 	<test thread-count="5" name="Test-ch">
-
 		<classes>
 			<class name="com.saama.test.LoginUITest" />
 			<class name="com.saama.test.LoginTest" />
