@@ -1,5 +1,6 @@
 package com.saama.base;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
 
@@ -21,6 +22,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.saama.utilities.PropUtils;
 
 public class AutomationWrapper {
 
@@ -43,7 +45,7 @@ public class AutomationWrapper {
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({ "browser" })
-	public void setup(@Optional("edge") String browserName, Method method) {
+	public void setup(@Optional("edge") String browserName, Method method) throws IOException {
 
 		test = extent.createTest(method.getName());
 
@@ -58,7 +60,10 @@ public class AutomationWrapper {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+		
+		String baseUrl=PropUtils.getValue("test_data/data.properties", "url");
+		
+		driver.get(baseUrl);
 	}
 
 	@AfterMethod(alwaysRun = true)
