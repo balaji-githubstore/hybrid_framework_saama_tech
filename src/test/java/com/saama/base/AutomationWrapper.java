@@ -48,6 +48,13 @@ public class AutomationWrapper {
 	public void setup(@Optional("edge") String browserName, Method method) throws IOException {
 
 		test = extent.createTest(method.getName());
+		
+		//high preference to properties file
+		if(!PropUtils.getValue("test_data/data.properties", "browser").equalsIgnoreCase("na"))
+		{
+			browserName=PropUtils.getValue("test_data/data.properties", "browser");
+		}
+
 
 		if (browserName.equalsIgnoreCase("ff")) {
 			driver = new FirefoxDriver();
