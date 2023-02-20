@@ -28,14 +28,17 @@ public class AutomationWrapper {
 
 	protected WebDriver driver;
 
-	private ExtentReports extent;
+	private static ExtentReports extent;
 	protected ExtentTest test;
 
 	@BeforeSuite
 	public void init() {
-		extent = new ExtentReports();
-		ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark.html");
-		extent.attachReporter(spark);
+		if(extent==null)
+		{
+			extent = new ExtentReports();
+			ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark.html");
+			extent.attachReporter(spark);
+		}
 	}
 
 	@AfterSuite
