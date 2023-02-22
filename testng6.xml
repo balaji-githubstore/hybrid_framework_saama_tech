@@ -3,7 +3,7 @@
 <suite name="Suite">
 
 	<test thread-count="5" name="Test-ch">
-		<parameter name="browser" value="ch"></parameter>
+		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="com.saama.test.LoginUITest">
 
